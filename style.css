@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+    background: #222;
+    color: white;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.about {
+    background: #f4f4f4;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-content img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project-list {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    flex: 1;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.project-card a {
+    text-decoration: none;
+}
+
+.contact {
+    background: #f4f4f4;
+}
+
+form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+
+/* Telefonos nézet */
+
+@media (max-width: 700px) {
+
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-list {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
